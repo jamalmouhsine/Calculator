@@ -1,5 +1,87 @@
+/* font used start */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+/* font used end */
+/* reset default value start */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* reset default value end */
+/* body start */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    overflow-y: scroll;
+}
+/* body end */
+/* container start */
+.container{
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+}
+/* container end */
+/* accordion start */
+.accordion{
+    max-width: 700px;
+    margin: 50px 0;
+}
+/* accordion end */
+/* accordion item start */
+.accordion-item{
+    border-bottom: 1px solid #e9e9ea;
+    margin-bottom: 30px;
+}
+/* accordion item end */
+/* accordion heading start */
+.accordion-heading{
+    display: flex;
+    cursor: pointer;
+    padding: 15px 0;
+}
+.accordion-heading h2{
+    font-weight: 700;
+    font-size: 24px;
+    color: #373b3e;
+}
+/* accordion heading end */
+/* accordion btn start */
+.accordion-btn{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #009df8;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+/* accordion btn end */
+/* accordion content start */
+.accordion-content{
+    padding: 0 45px;
+    height: 0;
+    overflow: hidden;
+    transition: height .4s ease-in-out, margin .4s ease-in-out;
+}
+.accordion-content h3{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #373b3e;
+}
+.accordion-content p{
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7a7c7f;
+}
+/* accordion content end */
